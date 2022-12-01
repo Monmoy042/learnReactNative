@@ -1,32 +1,26 @@
 import React from "react";
-import { View, Image, StyleSheet, Text } from "react-native";
+import { View, StyleSheet } from "react-native";
+import CardDetail from "../components/CardDetail";
 
 const Images = () => {
   return (
-    <View style={styles.listStyle}>
-      <Text style={styles.textStyle}>This is Images File</Text>
-      <Image
-        style={styles.imageStyle}
-        source={require("../../assets/test1.jpg")}
+    <View>
+      <CardDetail
+        textData="This is my first img"
+        imgSrc={require("../../assets/test1.jpg")}
+      />
+      <CardDetail
+        textData="This is my second img"
+        imgSrc={require("../../assets/test1.jpg")}
+      />
+      <CardDetail
+        textData="This is my third img"
+        imgSrc={require("../../assets/test1.jpg")}
       />
     </View>
   );
 };
 
-const styles = StyleSheet.create({
-  listStyle: {
-    height: 500,
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  textStyle: {
-    fontSize: 30,
-  },
-  imageStyle: {
-    height: 200,
-    width: 200,
-  },
-});
+const styles = StyleSheet.create({});
 
 export default Images;
