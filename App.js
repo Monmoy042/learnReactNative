@@ -1,12 +1,12 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import { Text, StyleSheet, View } from "react-native";
-import NetflixCard from "./src/components/NetflixCard";
+import ExtFont from "./src/components/ExtFont";
 
 const App = () => {
   return (
     <View>
-      <NetflixCard />
+      <ExtFont />
     </View>
   );
 };
