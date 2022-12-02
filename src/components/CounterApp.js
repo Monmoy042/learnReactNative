@@ -25,7 +25,9 @@ const CounterApp = () => {
       <TouchableOpacity
         style={styles.btnStyle}
         onPress={() => {
-          return count > 0 ? setCount(count - 10) : alert("You cannot do this");
+          return count > 0
+            ? setCount(count - 10)
+            : alert("no more decrement...!");
         }}
       >
         <Text style={styles.textStyle}>-10</Text>
@@ -44,11 +46,13 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: 30,
     color: "#fff",
+    borderRadius: 5,
   },
   btnStyle: {
     margin: 20,
     padding: 5,
     backgroundColor: "#000",
+    borderRadius: 15,
   },
   textStyle: {
     color: "#fff",
