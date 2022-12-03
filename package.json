@@ -12,6 +12,7 @@
     "@expo-google-fonts/roboto": "^0.2.2",
     "expo": "~47.0.8",
     "expo-app-loading": "~2.1.1",
+    "expo-checkbox": "~2.2.2",
     "expo-status-bar": "~1.4.2",
     "react": "18.1.0",
     "react-dom": "^18.2.0",
