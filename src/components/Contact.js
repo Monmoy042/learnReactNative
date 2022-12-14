@@ -8,7 +8,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 
-const Contact = () => {
+const Contact = ({ navigation }) => {
   // Hook
   const [agree, setAgree] = useState(false);
   const [userName, setUserName] = useState("");
@@ -19,6 +19,7 @@ const Contact = () => {
     // return alert(userName, password);
     if (userName === "Monmoy" && password === "kms") {
       alert(`Thank you ${userName}`);
+      navigation.navigate("Home", { myName: `${userName}` });
     } else {
       alert(`Username and Password are not correct`);
     }
